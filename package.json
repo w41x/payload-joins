@@ -1,0 +1,74 @@
+{
+  "name": "payload-join",
+  "version": "0.1.0",
+  "description": "some experiments with the new join field in PayloadCMS",
+  "type": "module",
+  "license": "MIT",
+  "author": {
+    "name": "WALX Tech e.K.",
+    "email": "x@walx.tech",
+    "url": "https://walx.tech"
+  },
+  "contributors": [
+    {
+      "name": "Ш41%",
+      "email": "_@w41x.io",
+      "url": "https://w41x.io"
+    }
+  ],
+  "homepage": "https://github.com/w41x/payload-joins#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w41x/payload-joins.git"
+  },
+  "keywords": [
+    "payload",
+    "cms",
+    "join"
+  ],
+  "bugs": {
+    "url": "https://github.com/w41x/payload-joins/issues"
+  },
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "files": [
+    "dist",
+    "*.js",
+    "*.d.ts"
+  ],
+  "scripts": {
+    "dev": "next dev",
+    "gen:types": "payload generate:types",
+    "gen:imap": "payload generate:importmap"
+  },
+  "dependencies": {
+    "@payloadcms/db-mongodb": "3.0.0-beta.108",
+    "@payloadcms/db-postgres": "3.0.0-beta.108",
+    "@payloadcms/next": "3.0.0-beta.108",
+    "@payloadcms/richtext-lexical": "3.0.0-beta.108",
+    "@payloadcms/translations": "3.0.0-beta.108",
+    "@payloadcms/ui": "3.0.0-beta.108",
+    "next": "15.0.0-canary.161",
+    "payload": "3.0.0-beta.108",
+    "react": "19.0.0-rc-e4953922-20240919",
+    "react-dom": "19.0.0-rc-e4953922-20240919"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.5",
+    "@types/react": "^18.3.8",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "5.7.0-dev.20240922"
+  },
+  "pnpm": {
+    "overrides": {
+      "@types/react": "npm:types-react@19.0.0-rc.0",
+      "@types/react-dom": "npm:types-react-dom@19.0.0-rc.0"
+    }
+  },
+  "engines": {
+    "node": "^22.9.0"
+  },
+  "packageManager": "pnpm@9.11.0",
+  "private": true
+}
+
