@@ -58,4 +58,4 @@ someArrayAfterChangeFieldHookValue:  [ { someField: 'uiae', id: '66f039188ab03b0
 ```
 
 But `someArrayAfterChangeFieldHookPrevValue` should NEVER be an object. It is always an array or undefined. 
-This bug makes using the join field in this matter unusable.
+This bug makes using the join field in this matter impossible.
