@@ -59,3 +59,14 @@ someArrayAfterChangeFieldHookValue:  [ { someField: 'uiae', id: '66f039188ab03b0
 
 But `someArrayAfterChangeFieldHookPrevValue` should NEVER be an object. It is always an array or undefined. 
 This bug makes using the join field in this matter impossible.
+
+# how to reproduce
+
+1. have `docker` and `make` installed on your system
+2. `git clone` this repository 
+3. run `make start`
+4. navigate to `http://localhost`
+5. log in with the default account (already prefilled)
+6. go to collection `Projects` and create a Project (e.g. name it 'Test') with the default user selected in the `user` field
+7. go to collection `Users` and edit the default user. 
+8. Now if you add some entry to the array field `someArray`, save the changes and reload the document, the changes are gone!!! Also the console will log the above error. 
