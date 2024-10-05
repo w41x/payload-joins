@@ -5,6 +5,8 @@ some experiments with the new join field in PayloadCMS
 
 ## mysterious array auth prev value bug
 
+PayloadCMS versions: v3.0.0-beta.(108 - 111)
+
 Currently, if you have an auth enabled collection (e.g. `users`) with an array field and a join field 
 and the array field has a AfterChange field hook, then the `previousValue` argument in this hook will sometimes be overridden with the join value.
 
